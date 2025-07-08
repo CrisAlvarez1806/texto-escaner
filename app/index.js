@@ -10,7 +10,7 @@ const app = express();
 const upload = multer({ dest: 'uploads/' });
 
 const storage = new Storage();
-const bucket = storage.bucket('tu-nombre-de-bucket');
+const bucket = storage.bucket('bucket-proyecto1');
 const visionClient = new vision.ImageAnnotatorClient();
 const db = new Firestore();
 
