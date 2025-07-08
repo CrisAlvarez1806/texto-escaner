@@ -14,7 +14,7 @@ const bucket = storage.bucket('tu-nombre-de-bucket');
 const visionClient = new vision.ImageAnnotatorClient();
 const db = new Firestore();
 
-const palabrasProhibidas = ['violencia', 'grosería', 'odio','sangre','borracho','chantaje'];
+const palabrasProhibidas = ['violencia', 'grosería', 'odio','sangre','borracho','chantaje'];app.use(express.static('public'));
 
 app.post('/subir', upload.single('imagen'), async (req, res) => {
   const { titulo } = req.body;
